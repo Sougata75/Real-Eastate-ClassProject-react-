@@ -1,4 +1,4 @@
-import React from "react";
+
 import { NavLink } from "react-router-dom";
 import Logo from "../assets/Logo.png";
 import { myNav } from "../services/json/navbarOpt";
@@ -20,9 +20,7 @@ function Footer() {
               </h2>
               {myNav?.map((navItems,index) => (
                               <NavLink key={index} to={navItems.path}>
-                          {({isActive}) => (
                               <span className={`text-white text-[16px]`}>{navItems.label}</span>
-                          )}
                           </NavLink>
                              ))} 
             </div>

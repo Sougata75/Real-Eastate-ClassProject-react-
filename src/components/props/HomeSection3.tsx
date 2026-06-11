@@ -1,4 +1,4 @@
-import React from "react";
+
 import S3Card from '../../assets/section-3/s3img.jpg'
 
 const HomeSection3 = () => {

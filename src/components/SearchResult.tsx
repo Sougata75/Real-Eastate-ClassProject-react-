@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useSearchParams } from 'react-router-dom'
 import { cards } from '../services/json/cards';
 import { Link } from 'react-router-dom';

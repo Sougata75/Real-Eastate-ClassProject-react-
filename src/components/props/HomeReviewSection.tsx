@@ -1,4 +1,4 @@
-import React from "react";
+
 import review1Img from '../../assets/review/r1.png'
 import review2Img from '../../assets/review/r2.png'
 

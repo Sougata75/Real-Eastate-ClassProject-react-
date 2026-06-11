@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import Banner from "../assets/banner-img/banner.jpg";
 import HcardSection1 from "../components/props/HcardSection1";
 import HomeSection3 from "../components/props/HomeSection3";

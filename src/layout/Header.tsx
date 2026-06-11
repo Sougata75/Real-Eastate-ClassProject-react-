@@ -7,7 +7,7 @@ const Header = () => {
     const [isActive, setIsActive] = useState<boolean>(false)
   return (
     <nav className='w-full flex flex-wrap p-2'>
-        <div className='w-[100%] h-[60px] bg-black rounded-full mb-2 px-20 md:flex justify-between items-center hidden md:block'>
+        <div className='w-[100%] h-[60px] bg-black rounded-full mb-2 px-20 hidden md:flex justify-between items-center '>
             <div className='flex justify-between w-[25%]'>
                 <div className='text-white flex'><p className='mr-2 text-yellow-500'><i className="fa-solid fa-phone-volume"></i></p>+91 9182736456</div>
                 <div className='text-white flex'><p className='mr-2 text-yellow-500'><i className="fa-regular fa-envelope"></i></p> realstatedummy26@gmail.com</div>
@@ -27,7 +27,7 @@ const Header = () => {
             <div className='h-[100%] flex items-center'>
                 <img className='w-[90px]' src={Logo} alt="Logo-Img" />
             </div>
-            <div className='w-full md:w-[80%] md:flex justify-between hidden md:block'>
+            <div className='w-full hidden md:w-[80%] md:flex justify-between '>
 
                {myNav?.map((navItems,index) => (
                 <NavLink key={index} to={navItems.path}>
@@ -51,7 +51,7 @@ const Header = () => {
             <button onClick={() => setIsActive((prev) => !prev)} className='md:hidden text-white text-xl'><i className="fa-solid fa-bars"></i></button>
             </div>
 
-            <div className='px-1 h-[60px] bg-black rounded-full md:flex justify-center items-center hidden md:block'>
+            <div className='px-1 h-[60px] bg-black rounded-full hidden md:flex justify-center items-center '>
                 <NavLink to='/contactUs'>
                 <span className='text-yellow-400 w-[200px] flex justify-between items-center pl-9 text-lg'>Contact US <p className='ml-3 bg-white px-5 pt-3 pb-3 rounded-full'>➚</p></span>
                 </NavLink>
