@@ -28,9 +28,9 @@ function Home() {
     <>
       <section className="md:px-2">
         <div
-          className="h-[30vh] md:h-[100vh] bg-cover bg-bottom flex justify-center md:rounded-3xl"
+          className="h-[35vh] md:h-[100vh] bg-cover bg-bottom flex justify-center md:rounded-3xl"
           style={{ backgroundImage: `url(${Banner})` }}>
-          <div className="w-[1450px] flex flex-wrap items-center">
+          <div className="w-[1450px] flex flex-wrap items-center justify-center">
             <div className="flex flex-col items-center md:float-none md:items-start">
               <h1 className="text-white text-[20px] md:text-[80px] font-semibold flex flex-wrap md:w-[50%] mb-2 md:mb-10">
               Affordable Housing <p className="pr-2 md:pr-6">In</p>{" "}
@@ -50,17 +50,17 @@ function Home() {
             </button>
             </div>
 
-            <div className="w-full h-[238px] flex flex-wrap justify-center items-center bg-white/30 backdrop-blur-sm rounded-3xl px-10 py-2">
-                <div className="w-[80%] flex flex-wrap gap-14">
-                  <div className="w-full flex flex-wrap gap-10 items-start">
-                  <button onClick={()=>{setBuy(true); setRent(false)}} className={`${buy? "underline text-yellow-500":"text-yellow-500/80"} text-3xl  font-semibold`}>Buy</button>
-                  <button onClick={()=>{setBuy(false); setRent(true)}} className={`${rent? "underline text-yellow-500":"text-yellow-500/80"} text-3xl  font-semibold`}>Rent</button>
+            <div className="w-[90%] md:w-full h-[80px] md:h-[238px] flex flex-wrap justify-center items-center bg-white/30 backdrop-blur-sm rounded-3xl px-4 md:px-10 py-2">
+                <div className="w-[80%] flex flex-wrap gap-1 md:gap-14">
+                  <div className="w-full flex flex-wrap gap-2 md:gap-10 item text-[14px]smd:-start">
+                  <button onClick={()=>{setBuy(true); setRent(false)}} className={`${buy? "underline text-yellow-500":"text-yellow-500/80"} text-[10px] md:text-3xl  font-semibold`}>Buy</button>
+                  <button onClick={()=>{setBuy(false); setRent(true)}} className={`${rent? "underline text-yellow-500":"text-yellow-500/80"} text-[10px] md:text-3xl  font-semibold`}>Rent</button>
                 </div>
                 <div className="w-full flex flex-wrap">
-                  <div className="flex flex-wrap w-1/3 justify-between pr-16">
+                  <div className="flex flex-wrap w-1/3 justify-between md:pr-16">
                     <div>
-                      <p className="text-3xl text-yellow-500 mb-5">Location</p>
-                    <select className="bg-transparent text-white text-3xl" name="" id="" value={location} onChange={(e)=> setLocation(e.target.value)}>
+                      <p className=" text-[8px] md:text-3xl text-yellow-500 md:mb-5">Location</p>
+                    <select className="bg-transparent text-white text-[8px] md:text-3xl" name="" id="" value={location} onChange={(e)=> setLocation(e.target.value)}>
                       <option value="Newyork">New York City</option>
                       <option value="London">London</option>
                       <option value="Germany">Germany</option>
@@ -69,10 +69,10 @@ function Home() {
                     </div>
                     <div className="bg-yellow-500 h-full w-[1px]"></div>
                   </div>
-                  <div className="flex flex-wrap w-1/3 justify-between pr-16">
+                  <div className="flex flex-wrap w-1/3 justify-between pl-1 md:pl-0 md:pr-16">
                     <div>
-                      <p className="text-3xl text-yellow-500 mb-5">Property Type</p>
-                    <select className="bg-transparent text-white text-3xl" name="" id="" value={propertyType} onChange={(e)=> setPropertyType(e.target.value)}>
+                      <p className="text-[8px] md:text-3xl text-yellow-500 md:mb-5">Property Type</p>
+                    <select className="bg-transparent text-white text-[8px] md:text-3xl" name="" id="" value={propertyType} onChange={(e)=> setPropertyType(e.target.value)}>
                       <option value="Duplex House">Duplex House</option>
                       <option value="Bunglow">Banglow</option>
                       <option value="Farm House">Farm House</option>
@@ -83,8 +83,8 @@ function Home() {
                   </div>
                   <div className="flex flex-wrap w-1/3">
                     <div>
-                      <p className="text-3xl text-yellow-500 mb-5">Price Range</p>
-                    <select className="bg-transparent text-white text-3xl" name="" id="" value={priceRange} onChange={(e)=> setPriceRange(e.target.value)}>
+                      <p className="text-[8px] md:text-3xl text-yellow-500 pl-1 md:pl-0 md:mb-5">Price Range</p>
+                    <select className="bg-transparent text-white text-[8px] md:text-3xl" name="" id="" value={priceRange} onChange={(e)=> setPriceRange(e.target.value)}>
                       <option value="$21,000 - $40,000">$21,000 - $40,000</option>
                       <option value="$40,000 -$50,000">$40,000 -$50,000</option>
                       <option value="$50,000 -$70,000">$50,000 -$70,000</option>
@@ -95,9 +95,9 @@ function Home() {
                 </div>
                 </div>
                 <div className="w-[20%]">
-                  <button onClick={handleSearch} className="text-yellow-500 bg-black rounded-full w-[200px] flex justify-between items-center pl-9 text-lg p-1 border border-yellow-500 hover:shadow-md hover:shadow-black hover:translate-y-[-2px] transition-all">
+                  <button onClick={handleSearch} className="text-yellow-500 bg-black rounded-full w-[70px] md:w-[200px] flex justify-between items-center pl-2 md:pl-9 text-[8px] md:text-lg p-[2px] md:p-1 border border-yellow-500 hover:shadow-md hover:shadow-black hover:translate-y-[-2px] transition-all">
               Search
-              <p className="ml-3 bg-white px-5 pt-3 pb-3 rounded-full">➚</p>
+              <p className="md:ml-3 bg-white px-2 py-1  md:px-5 md:pt-3 md:pb-3 rounded-full">➚</p>
             </button>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import Logo from '../assets/Logo.png';
-import { myNav } from '../services/json/navbarOpt';
+import { myNav, myNavM } from '../services/json/navbarOpt';
 
 const Header = () => {
     const [isActive, setIsActive] = useState<boolean>(false)
@@ -38,12 +38,12 @@ const Header = () => {
                ))} 
             </div>
 
-            <div className={`${isActive?"block":"hidden"} right-2 top-[70px] absolute h-[88vh] text-center gap-5 pt-5 w-[150px] flex flex-col bg-black/30 backdrop-blur-sm rounded-3xl`}>
+            <div className={`${isActive?"block":"hidden"} right-2 top-[65px] z-10 absolute h-[88vh] text-center gap-5 pt-5 w-[150px] flex flex-col bg-black/70 backdrop-blur-sm rounded-3xl`}>
 
-               {myNav?.map((navItems,index) => (
+               {myNavM?.map((navItems,index) => (
                 <NavLink key={index} to={navItems.path}>
             {({isActive}) => (
-                <span onClick={()=>setIsActive(false)} className={`${isActive? "bg-white/10  backdrop-blur-md border-y-[1px] border-yellow-500":""} text-white text-[18px] px-6 py-2 rounded-full`}>{navItems.label}</span>
+                <span onClick={()=>setIsActive(false)} className={`${isActive? "bg-white/10  backdrop-blur-md border-y-[1px] border-yellow-500":""} text-white text-sm md:text-[18px] px-8 py-1 md:px-6 md:py-2 rounded-full`}>{navItems.label}</span>
             )}
             </NavLink>
                ))} 
