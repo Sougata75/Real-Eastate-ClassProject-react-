@@ -6,7 +6,7 @@ import { myNav } from '../services/json/navbarOpt';
 const Header = () => {
     const [isActive, setIsActive] = useState<boolean>(false)
   return (
-    <nav className='w-full flex flex-wrap p-2'>
+    <nav className='w-full flex flex-wrap md:p-2'>
         <div className='w-[100%] h-[60px] bg-black rounded-full mb-2 px-20 hidden md:flex justify-between items-center '>
             <div className='flex justify-between w-[25%]'>
                 <div className='text-white flex'><p className='mr-2 text-yellow-500'><i className="fa-solid fa-phone-volume"></i></p>+91 9182736456</div>
@@ -23,7 +23,7 @@ const Header = () => {
         </div>
 
         <div className='w-full flex justify-between'>
-            <div className='w-full md:w-[88%] h-[60px] bg-black flex flex-wrap md:items-center justify-between rounded-full  px-10 md:px-20'>
+            <div className='w-full md:w-[88%] h-[60px] bg-black flex flex-wrap md:items-center justify-between md:rounded-full px-3 md:px-20'>
             <div className='h-[100%] flex items-center'>
                 <img className='w-[90px]' src={Logo} alt="Logo-Img" />
             </div>
@@ -47,6 +47,16 @@ const Header = () => {
             )}
             </NavLink>
                ))} 
+
+                <div className='flex flex-wrap  gap-5 justify-center'>
+                <NavLink to="#">
+                    <span className='text-white flex'>English <p className='text-yellow-500'><i className="fa-solid fa-angle-down"></i></p></span>
+                </NavLink>
+                <NavLink to="/login">
+                    <span className='text-white flex'>Log In <p className='text-yellow-500'><i className="fa-solid fa-angle-down"></i></p></span>
+                </NavLink>
+            </div>
+               
             </div>
             <button onClick={() => setIsActive((prev) => !prev)} className='md:hidden text-white text-xl'><i className="fa-solid fa-bars"></i></button>
             </div>

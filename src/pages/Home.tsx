@@ -26,27 +26,27 @@ function Home() {
 
   return (
     <>
-      <section className="px-2">
+      <section className="md:px-2">
         <div
-          className="h-[100vh] bg-cover bg-bottom flex justify-center rounded-3xl"
+          className="h-[30vh] md:h-[100vh] bg-cover bg-bottom flex justify-center md:rounded-3xl"
           style={{ backgroundImage: `url(${Banner})` }}>
           <div className="w-[1450px] flex flex-wrap items-center">
-            <div>
-              <h1 className="text-white text-[80px] font-semibold flex flex-wrap w-[50%] mb-10">
-              Affordable Housing <p className="pr-6">In</p>{" "}
-              <p className="text-yellow-500 text-[80px] font-bold">
+            <div className="flex flex-col items-center md:float-none md:items-start">
+              <h1 className="text-white text-[20px] md:text-[80px] font-semibold flex flex-wrap md:w-[50%] mb-2 md:mb-10">
+              Affordable Housing <p className="pr-2 md:pr-6">In</p>{" "}
+              <p className="text-yellow-500 text-[20px] md:text-[80px] font-bold">
                 Lagos Island
               </p>
             </h1>
-            <p className="text-[20px] text-white w-[50%] mb-20">
+            <p className="text-[7px] md:text-[20px] text-white w-[80%] md:w-[50%]  mb-2 md:mb-20">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
               ratione labore ipsum nemo earum tempore nulla ad laborum quibusdam
               cum voluptatibus error velit temporibus optio minus, voluptate
               maiores mollitia quam.
             </p>
-            <button className="text-yellow-500 bg-white rounded-full w-[200px] flex justify-between items-center pl-9 text-lg p-1 border border-yellow-500 hover:shadow-md hover:shadow-black hover:translate-y-[-2px] transition-all">
+            <button className="mr-[190px] text-yellow-500 bg-white rounded-full w-[115px] md:w-[200px] flex justify-between items-center pl-3 md:pl-9 text-[12px] md:text-lg p-[2px] md:p-1 border border-yellow-500 hover:shadow-md hover:shadow-black hover:translate-y-[-2px] transition-all">
               View More
-              <p className="ml-3 bg-black px-5 pt-3 pb-3 rounded-full">➚</p>
+              <p className="ml-3 bg-black py-1 px-2 md:px-5 md:pt-3 md:pb-3 rounded-full">➚</p>
             </button>
             </div>
 
