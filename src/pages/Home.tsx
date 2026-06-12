@@ -69,7 +69,7 @@ function Home() {
                       <option value="Los Angeles">Los Angeles</option>
                     </select>
                     </div>
-                    <div className="bg-yellow-500 h-full w-[1px]"></div>
+                    <div className="hidden md:block bg-yellow-500 h-full w-[1px]"></div>
                   </div>
                   <div className="flex flex-wrap w-1/3 justify-between pl-1 md:pl-0 md:pr-16">
                     <div>
@@ -81,7 +81,7 @@ function Home() {
                       <option value="Stilt Houses">Stilt Houses</option>
                     </select>
                     </div>
-                    <div className="bg-yellow-500 h-full w-[1px]"></div>
+                    <div className="hidden md:block bg-yellow-500 h-full w-[1px]"></div>
                   </div>
                   <div className="flex flex-wrap w-1/3">
                     <div>
