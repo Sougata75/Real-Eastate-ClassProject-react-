@@ -108,22 +108,22 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="py-[15px] md:py-[50px] flex flex-wrap justify-center gap-16">
+      <section className="py-[15px] md:py-[50px] flex flex-wrap justify-center gap-4 md:gap-16">
         <div className="w-full md:w-[1320px] flex flex-wrap justify-between">
           <div className="w-[50%]">
             <h2 className=" ml-1 md:ml-0 text-[20px] md:text-[65px] font-semibold text-black">Looking For Your <p className=" text-[25px] md:text-[75px] font-bold text-yellow-500">Dream Home?</p></h2>
           </div>
-          <div className="w-[40%] flex flex-wrap">
+          <div className="w-[48%] mr-1 md:mr-0 md:w-[40%] flex flex-wrap">
             <p className=" text-[8px] md:text-[20px] w-full">Figma ipsum component varient main layer. Effect list background ditribute</p>
             <div className="flex items-end">
-              <button className="text-yellow-500 bg-white rounded-full  md:w-[200px] flex justify-between items-center md:pl-9 text-sm md:text-lg px-3 p-1 border border-yellow-500 hover:shadow-md hover:shadow-black hover:translate-y-[-2px] transition-all">
+              <button className="text-yellow-500 bg-white rounded-full  md:w-[200px] flex justify-between items-center md:pl-9 text-sm md:text-lg px-3 md:px-1 p-1 border border-yellow-500 hover:shadow-md hover:shadow-black hover:translate-y-[-2px] transition-all">
               View More
               <p className="hidden md:block ml-3 bg-black md:px-5 pt-3 pb-3 rounded-full">➚</p>
             </button>
             </div>
           </div>
         </div>
-        <div className="w-[1320px] flex flex-wrap gap-5">
+        <div className="w-[1320px] flex flex-wrap gap-1 md:gap-5">
         <HcardSection1 items = {cards.slice(0, 4)} />
         </div>
       </section>
