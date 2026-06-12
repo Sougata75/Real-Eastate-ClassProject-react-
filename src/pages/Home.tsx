@@ -71,7 +71,7 @@ function Home() {
                     </div>
                     <div className="hidden md:block bg-yellow-500 h-full w-[1px]"></div>
                   </div>
-                  <div className="flex flex-wrap w-1/3 justify-between pl-1 md:pl-0 md:pr-16">
+                  <div className="flex flex-wrap w-1/3 justify-between  md:pr-16">
                     <div>
                       <p className="text-[8px] md:text-3xl text-yellow-500 md:mb-5">Property Type</p>
                     <select className="bg-transparent text-white text-[8px] md:text-3xl" name="" id="" value={propertyType} onChange={(e)=> setPropertyType(e.target.value)}>
@@ -85,7 +85,7 @@ function Home() {
                   </div>
                   <div className="flex flex-wrap w-1/3">
                     <div>
-                      <p className="text-[8px] md:text-3xl text-yellow-500 pl-1 md:pl-0 md:mb-5">Price Range</p>
+                      <p className="text-[8px] md:text-3xl text-yellow-500  md:mb-5">Price Range</p>
                     <select className="bg-transparent text-white text-[8px] md:text-3xl" name="" id="" value={priceRange} onChange={(e)=> setPriceRange(e.target.value)}>
                       <option value="$21,000 - $40,000">$21,000 - $40,000</option>
                       <option value="$40,000 -$50,000">$40,000 -$50,000</option>
@@ -97,10 +97,12 @@ function Home() {
                 </div>
                 </div>
                 <div className="w-[20%]">
-                  <button onClick={handleSearch} className="text-yellow-500 bg-black rounded-full md:w-[200px]  flex justify-between items-center  md:pl-9 text-sm  md:text-lg p-1 px-3 ml-2 md:ml-0 md:p-1 border border-yellow-500 hover:shadow-md hover:shadow-black hover:translate-y-[-2px] transition-all">
+                  <button onClick={handleSearch} className="hidden  text-yellow-500 bg-black rounded-full w-[200px]  md:flex justify-between items-center  pl-9 text-lg p-1 border border-yellow-500 hover:shadow-md hover:shadow-black hover:translate-y-[-2px] transition-all">
               Search
               <p className="hidden md:block ml-3 bg-white px-5 pt-3 pb-3 rounded-full">➚</p>
             </button>
+
+            <button onClick={handleSearch} className=" md:hidden ml-4 bg-black text-yellow-500 p-3 px-4 rounded-full"><i className="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </div>
           </div>
@@ -114,7 +116,7 @@ function Home() {
           <div className="w-[40%] flex flex-wrap">
             <p className=" text-[8px] md:text-[20px] w-full">Figma ipsum component varient main layer. Effect list background ditribute</p>
             <div className="flex items-end">
-              <button className="text-yellow-500 bg-white rounded-full  md:w-[200px] flex justify-between items-center md:pl-9 text-sm md:text-lg px-3 sm:p-1 border border-yellow-500 hover:shadow-md hover:shadow-black hover:translate-y-[-2px] transition-all">
+              <button className="text-yellow-500 bg-white rounded-full  md:w-[200px] flex justify-between items-center md:pl-9 text-sm md:text-lg px-3 p-1 border border-yellow-500 hover:shadow-md hover:shadow-black hover:translate-y-[-2px] transition-all">
               View More
               <p className="hidden md:block ml-3 bg-black md:px-5 pt-3 pb-3 rounded-full">➚</p>
             </button>
