@@ -33,7 +33,7 @@ function Home() {
           <div className="w-[1450px] flex flex-wrap items-center justify-center">
             <div className="flex flex-col items-center md:float-none md:items-start">
               <h1 className="text-white text-[20px] md:text-[80px] font-semibold flex flex-wrap w-[80%] md:w-[50%] mb-2 md:mb-10">
-              Affordable Housing <p className="ml-2 md:ml-0 pr-2 md:pr-6">In</p>
+              Affordable Housing <p className="ml-[6px] md:ml-0 pr-2 md:pr-6">In</p>
               <p className="text-yellow-500 text-[20px] md:text-[80px] font-bold">
                 Lagos Island
               </p>
@@ -110,11 +110,11 @@ function Home() {
       </section>
       <section className="py-[15px] md:py-[50px] flex flex-wrap justify-center gap-4 md:gap-16">
         <div className="w-full md:w-[1320px] flex flex-wrap justify-between">
-          <div className="w-[50%]">
+          <div className="w-full flex md:flex-none justify-center md:w-[50%]">
             <h2 className=" ml-1 md:ml-0 text-[20px] md:text-[65px] font-semibold text-black">Looking For Your <p className=" text-[25px] md:text-[75px] font-bold text-yellow-500">Dream Home?</p></h2>
           </div>
-          <div className="w-[48%] mr-1 md:mr-0 md:w-[40%] flex flex-wrap">
-            <p className=" text-[8px] md:text-[20px] w-full">Figma ipsum component varient main layer. Effect list background ditribute</p>
+          <div className="w-[100%] mr-1 md:mr-0 md:w-[40%] flex flex-col md:flex-row flex-wrap items-center">
+            <p className=" text-[8px] text-center md:text-start md:text-[20px] w-[70%] md:w-full my-2 md:my-0">Figma ipsum component varient main layer. Effect list background ditribute</p>
             <div className="flex items-end">
               <button className="text-yellow-500 bg-white rounded-full  md:w-[200px] flex justify-between items-center md:pl-9 text-sm md:text-lg px-3 md:px-1 p-1 border border-yellow-500 hover:shadow-md hover:shadow-black hover:translate-y-[-2px] transition-all">
               View More
@@ -127,16 +127,16 @@ function Home() {
         <HcardSection1 items = {cards.slice(0, 4)} />
         </div>
       </section>
-      <section  className="py-[50px] flex justify-center">
+      <section  className="py-[15px] md:py-[50px] flex justify-center">
         <HomeSection3/>
       </section>
-      <section className="py-[50px] flex justify-center">
+      <section className="py-[15px] md:py-[50px] flex justify-center">
         <HomeSection4/>
       </section>
-      <section className="py-[50px] flex justify-center">
+      <section className="py-[15px] md:py-[50px] flex justify-center">
         <HomeSection5/>
       </section>
-      <section className="py-[50px] flex justify-center">
+      <section className="py-[15px] md:py-[50px] flex justify-center">
         <HomeReviewSection/>
       </section>
     </>
