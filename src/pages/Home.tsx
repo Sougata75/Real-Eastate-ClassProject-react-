@@ -28,11 +28,11 @@ function Home() {
     <>
       <section className="md:px-2">
         <div
-          className="h-[35vh] md:h-[100vh] bg-cover bg-bottom flex justify-center md:rounded-3xl"
+          className="h-[36vh] md:h-[100vh] bg-cover bg-bottom flex justify-center md:rounded-3xl"
           style={{ backgroundImage: `url(${Banner})` }}>
           <div className="w-[1450px] flex flex-wrap items-center justify-center">
             <div className="flex flex-col items-center md:float-none md:items-start">
-              <h1 className="text-white text-[20px] md:text-[80px] font-semibold flex flex-wrap md:w-[50%] mb-2 md:mb-10">
+              <h1 className="text-white text-[20px] md:text-[80px] font-semibold flex flex-wrap w-[80%] md:w-[50%] mb-2 md:mb-10">
               Affordable Housing <p className="pr-2 md:pr-6">In</p>{" "}
               <p className="text-yellow-500 text-[20px] md:text-[80px] font-bold">
                 Lagos Island
@@ -44,14 +44,16 @@ function Home() {
               cum voluptatibus error velit temporibus optio minus, voluptate
               maiores mollitia quam.
             </p>
-            <button className="mr-[190px] text-yellow-500 bg-white rounded-full w-[115px] md:w-[200px] flex justify-between items-center pl-3 md:pl-9 text-[12px] md:text-lg p-[2px] md:p-1 border border-yellow-500 hover:shadow-md hover:shadow-black hover:translate-y-[-2px] transition-all">
+            <div className="w-[80%]">
+            <button className=" text-yellow-500 bg-white rounded-full md:w-[200px] flex justify-between items-center  md:pl-9 text-sm md:text-lg px-3 md:px-0 p-1 border border-yellow-500 hover:shadow-md hover:shadow-black hover:translate-y-[-2px] transition-all">
               View More
-              <p className="ml-3 bg-black py-1 px-2 md:px-5 md:pt-3 md:pb-3 rounded-full">➚</p>
+              <p className="hidden md:block bg-black  px-5 pt-3 pb-3 rounded-full">➚</p>
             </button>
+            </div>
             </div>
 
             <div className="w-[90%] md:w-full h-[80px] md:h-[238px] flex flex-wrap justify-center items-center bg-white/30 backdrop-blur-sm rounded-3xl px-4 md:px-10 py-2">
-                <div className="w-[80%] flex flex-wrap gap-1 md:gap-14">
+                <div className="w-[75%] md:w-[80%] flex flex-wrap gap-1 md:gap-14">
                   <div className="w-full flex flex-wrap gap-2 md:gap-10 item text-[14px]smd:-start">
                   <button onClick={()=>{setBuy(true); setRent(false)}} className={`${buy? "underline text-yellow-500":"text-yellow-500/80"} text-[10px] md:text-3xl  font-semibold`}>Buy</button>
                   <button onClick={()=>{setBuy(false); setRent(true)}} className={`${rent? "underline text-yellow-500":"text-yellow-500/80"} text-[10px] md:text-3xl  font-semibold`}>Rent</button>
@@ -95,26 +97,26 @@ function Home() {
                 </div>
                 </div>
                 <div className="w-[20%]">
-                  <button onClick={handleSearch} className="text-yellow-500 bg-black rounded-full w-[70px] md:w-[200px] flex justify-between items-center pl-2 md:pl-9 text-[8px] md:text-lg p-[2px] md:p-1 border border-yellow-500 hover:shadow-md hover:shadow-black hover:translate-y-[-2px] transition-all">
+                  <button onClick={handleSearch} className="text-yellow-500 bg-black rounded-full md:w-[200px]  flex justify-between items-center  md:pl-9 text-sm  md:text-lg p-1 px-3 ml-1 md:ml-0 md:p-1 border border-yellow-500 hover:shadow-md hover:shadow-black hover:translate-y-[-2px] transition-all">
               Search
-              <p className="md:ml-3 bg-white px-2 py-1  md:px-5 md:pt-3 md:pb-3 rounded-full">➚</p>
+              <p className="hidden md:block ml-3 bg-white px-5 pt-3 pb-3 rounded-full">➚</p>
             </button>
                 </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="py-[50px] flex flex-wrap justify-center gap-16">
-        <div className="w-[1320px] flex flex-wrap justify-between">
+      <section className="py-[15px] md:py-[50px] flex flex-wrap justify-center gap-16">
+        <div className="w-full md:w-[1320px] flex flex-wrap justify-between">
           <div className="w-[50%]">
-            <h2 className="text-[65px] font-semibold text-black">Looking For Your <p className="text-[75px] font-bold text-yellow-500">Dream Home?</p></h2>
+            <h2 className=" ml-1 md:ml-0 text-[20px] md:text-[65px] font-semibold text-black">Looking For Your <p className=" text-[25px] md:text-[75px] font-bold text-yellow-500">Dream Home?</p></h2>
           </div>
           <div className="w-[40%] flex flex-wrap">
-            <p className="text-[20px] w-full">Figma ipsum component varient main layer. Effect list background ditribute</p>
+            <p className=" text-[8px] md:text-[20px] w-full">Figma ipsum component varient main layer. Effect list background ditribute</p>
             <div className="flex items-end">
-              <button className="text-yellow-500 bg-white rounded-full w-[200px] flex justify-between items-center pl-9 text-lg p-1 border border-yellow-500 hover:shadow-md hover:shadow-black hover:translate-y-[-2px] transition-all">
+              <button className="text-yellow-500 bg-white rounded-full  md:w-[200px] flex justify-between items-center md:pl-9 text-sm md:text-lg px-3 sm:p-1 border border-yellow-500 hover:shadow-md hover:shadow-black hover:translate-y-[-2px] transition-all">
               View More
-              <p className="ml-3 bg-black px-5 pt-3 pb-3 rounded-full">➚</p>
+              <p className="hidden md:block ml-3 bg-black md:px-5 pt-3 pb-3 rounded-full">➚</p>
             </button>
             </div>
           </div>
