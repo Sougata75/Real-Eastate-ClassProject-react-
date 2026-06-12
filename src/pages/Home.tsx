@@ -97,7 +97,7 @@ function Home() {
                 </div>
                 </div>
                 <div className="w-[20%]">
-                  <button onClick={handleSearch} className="text-yellow-500 bg-black rounded-full md:w-[200px]  flex justify-between items-center  md:pl-9 text-sm  md:text-lg p-1 px-3 ml-1 md:ml-0 md:p-1 border border-yellow-500 hover:shadow-md hover:shadow-black hover:translate-y-[-2px] transition-all">
+                  <button onClick={handleSearch} className="text-yellow-500 bg-black rounded-full md:w-[200px]  flex justify-between items-center  md:pl-9 text-sm  md:text-lg p-1 px-3 ml-2 md:ml-0 md:p-1 border border-yellow-500 hover:shadow-md hover:shadow-black hover:translate-y-[-2px] transition-all">
               Search
               <p className="hidden md:block ml-3 bg-white px-5 pt-3 pb-3 rounded-full">➚</p>
             </button>
