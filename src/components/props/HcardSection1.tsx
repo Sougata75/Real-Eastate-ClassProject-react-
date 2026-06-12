@@ -24,7 +24,7 @@ const HcardSection1:React.FC<CardProp> = ({items}) => {
               </div>
               <div className="w-[25%] md:w-[20%] flex justify-end items-center">
                 <Link to={`/property/${properties.id}`}>
-                <button className="text-yellow-500 text-4xl bg-black p-3 px-5 md:p-7 md:px-9 rounded-full hover:shadow-md hover:bg-gray-900 hover:shadow-black hover:translate-y-[-2px] transition-all">
+                <button className="text-yellow-500 text-4xl bg-black p-4 px-[23px] md:p-7 md:px-9 rounded-full hover:shadow-md hover:bg-gray-900 hover:shadow-black hover:translate-y-[-2px] transition-all">
                   ➚
                 </button>
                 </Link>

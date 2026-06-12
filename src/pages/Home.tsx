@@ -102,7 +102,7 @@ function Home() {
               <p className="hidden md:block ml-3 bg-white px-5 pt-3 pb-3 rounded-full">➚</p>
             </button>
 
-            <button onClick={handleSearch} className=" md:hidden ml-4 bg-black text-yellow-500 p-3 px-4 rounded-full"><i className="fa-solid fa-magnifying-glass"></i></button>
+            <button onClick={handleSearch} className=" md:hidden ml-4 bg-black text-yellow-500 p-3 px-[15px] rounded-full"><i className="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </div>
           </div>
