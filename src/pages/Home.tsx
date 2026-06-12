@@ -33,7 +33,7 @@ function Home() {
           <div className="w-[1450px] flex flex-wrap items-center justify-center">
             <div className="flex flex-col items-center md:float-none md:items-start">
               <h1 className="text-white text-[20px] md:text-[80px] font-semibold flex flex-wrap w-[80%] md:w-[50%] mb-2 md:mb-10">
-              Affordable Housing <p className="pr-2 md:pr-6">In</p>{" "}
+              Affordable Housing <p className="ml-2 md:ml-0 pr-2 md:pr-6">In</p>
               <p className="text-yellow-500 text-[20px] md:text-[80px] font-bold">
                 Lagos Island
               </p>
@@ -62,7 +62,7 @@ function Home() {
                   <div className="flex flex-wrap w-1/3 justify-between md:pr-16">
                     <div>
                       <p className=" text-[8px] md:text-3xl text-yellow-500 md:mb-5">Location</p>
-                    <select className="bg-transparent text-white text-[8px] md:text-3xl" name="" id="" value={location} onChange={(e)=> setLocation(e.target.value)}>
+                    <select className="outline-none bg-transparent text-white text-[8px] md:text-3xl" name="" id="" value={location} onChange={(e)=> setLocation(e.target.value)}>
                       <option value="Newyork">New York City</option>
                       <option value="London">London</option>
                       <option value="Germany">Germany</option>
@@ -74,7 +74,7 @@ function Home() {
                   <div className="flex flex-wrap w-1/3 justify-between  md:pr-16">
                     <div>
                       <p className="text-[8px] md:text-3xl text-yellow-500 md:mb-5">Property Type</p>
-                    <select className="bg-transparent text-white text-[8px] md:text-3xl" name="" id="" value={propertyType} onChange={(e)=> setPropertyType(e.target.value)}>
+                    <select className="outline-none bg-transparent text-white text-[8px] md:text-3xl" name="" id="" value={propertyType} onChange={(e)=> setPropertyType(e.target.value)}>
                       <option value="Duplex House">Duplex House</option>
                       <option value="Bunglow">Banglow</option>
                       <option value="Farm House">Farm House</option>
@@ -86,7 +86,7 @@ function Home() {
                   <div className="flex flex-wrap w-1/3">
                     <div>
                       <p className="text-[8px] md:text-3xl text-yellow-500  md:mb-5">Price Range</p>
-                    <select className="bg-transparent text-white text-[8px] md:text-3xl" name="" id="" value={priceRange} onChange={(e)=> setPriceRange(e.target.value)}>
+                    <select className="outline-none bg-transparent text-white text-[8px] md:text-3xl" name="" id="" value={priceRange} onChange={(e)=> setPriceRange(e.target.value)}>
                       <option value="$21,000 - $40,000">$21,000 - $40,000</option>
                       <option value="$40,000 -$50,000">$40,000 -$50,000</option>
                       <option value="$50,000 -$70,000">$50,000 -$70,000</option>
