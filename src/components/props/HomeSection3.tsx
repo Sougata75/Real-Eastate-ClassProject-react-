@@ -43,7 +43,7 @@ const HomeSection3 = () => {
         <div className="mt-4 md:mt-0 mx-1 md:mx-0 w-full md:w-[60%] h-[290px] md:h-auto flex flex-wrap justify-between">
           <div className="w-[49%] bg-cover bg-left rounded-3xl" style={{backgroundImage: `url(${S3Card})`, backgroundSize: '200%'}}></div>
           <div className="w-[49%]">
-            <div className="bg-cover rounded-3xl w-full h-[70%]" style={{backgroundImage: `url(${S3Card})`, backgroundSize: '200%', backgroundPosition: '100% 40.2%'}}></div>
+            <div className="bg-cover rounded-3xl w-full h-[70.2%] md:h-[70%]" style={{backgroundImage: `url(${S3Card})`, backgroundSize: '200%', backgroundPosition: '100% 40.2%'}}></div>
             <p className=" text-[8px] md:text-[22px] w-[90%] my-4">
             Figma ipsum component varient main layer. Effect list background
             ditribute
