@@ -28,7 +28,7 @@ function HomeSection4() {
         <div className='md:w-[30%] flex flex-wrap justify-center md:justify-start gap-5 md:gap-20'>
             <div className='w-full p-4 md:p-8 bg-yellow-100 border shadow-[0_0_4px_4px] shadow-gray-400 rounded-3xl mt-[20px] md:mt-24'>
             <div className='w-full'>
-                <h3 className='text-[65px] font-bold text-black/50 justify-self-end'>01</h3>
+                <h3 className='text-[65px] font-bold text-black/50 justify-self-end'>03</h3>
             </div>
             <h3 className='text-[36px] text-center md:text-start md:text-[42px] my-[26px] font-semibold'>Property Management</h3>
             <p className='md:w-[85%] text-center md:text-start px-4 md:px-0 text-lg md:text-2xl'>Figma Ipsum Component Varient Main Layer. Object</p>
