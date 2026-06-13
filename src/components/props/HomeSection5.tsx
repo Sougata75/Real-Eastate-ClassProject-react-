@@ -38,7 +38,7 @@ function HomeSection5() {
 
   return (
     <>
-    <div className='bg-black w-full flex justify-center rounded-3xl md:mx-3 py-5 md:py-16'>
+    <div className='bg-black w-full flex justify-center md:rounded-3xl md:mx-3 py-5 md:py-16'>
         <div className=' w-full md:w-[1320px] flex flex-wrap justify-center md:justify-between'>
             <div className='w-full flex flex-wrap text-center md:text-start md:flex-none md:w-1/2 p-1'>
             <h2 className='text-[65px] text-yellow-500/50 font-semibold w-full mb-10 md:mb-[100px] md:my-[70px]'>Gallery</h2>
